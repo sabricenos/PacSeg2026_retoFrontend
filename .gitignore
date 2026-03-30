@@ -7,4 +7,19 @@ node_modules/
 /playwright/.cache/
 /playwright/.auth/
 reports/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Visual Studio Code
+.vscode/
+.history/
+*.log
+
+# Archivos del sistema
 .DS_Store
+Thumbs.db

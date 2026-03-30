@@ -25,8 +25,8 @@ Instalación
 1. Clona el repositorio:
 
 Bash    
-    git clone <url-de-tu-repositorio>
-    cd <nombre-de-la-carpeta>
+    git clone https://github.com/sabricenos/PacSeg2026_retoFrontend.git
+    cd PacSeg2026_retoFrontend
 
 2. Instala las dependencias necesarias:
 
@@ -76,7 +76,7 @@ Captura de Errores: El framework está configurado para tomar capturas de pantal
 ├── cucumber.js         # Configuración del motor Cucumber
 └── package.json        # Dependencias y scripts
 
-También se ha incluido el archivo .gitignore donde especificamos no subir la cache (navegadores que ocupan espacio) y credenciales de usuario, DS_Store para los archivos Mac de configuración, etc.
+También se ha incluido el archivo .gitignore donde especificamos no subir la cache (navegadores que ocupan espacio) y credenciales de usuario, DS_Store y Thumbs.db para los archivos Mac y Windows de configuración, etc.
 
 
 👤 Escenarios Cubiertos
@@ -92,3 +92,7 @@ Agregar producto al carrito.
 Verificación de producto en carrito.
 
 Finalización de Checkout (Formulario y confirmación).
+
+
+QA Automation Engineer: [Sergio Briceño]
+Fecha: 2026
