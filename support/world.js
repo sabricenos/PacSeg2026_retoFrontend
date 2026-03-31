@@ -5,10 +5,16 @@ const { chromium } = require('@playwright/test');
 
 class CustomWorld extends World {
   async openBrowser() {
-    this.browser = await chromium.launch({ headless: false }); // Cambiar a true en CI/CD
-    this.context = await this.browser.newContext();
-    this.page = await this.context.newPage();
-  }
+  // process.env.CI es una variable que GitHub Actions activa automáticamente
+  const isCI = process.env.CI === 'true';
+
+  this.browser = await chromium.launch({ 
+    headless: isCI // Será 'true' en GitHub y 'false' en tu PC
+  }); 
+  
+  this.context = await this.browser.newContext();
+  this.page = await this.context.newPage();
+}
 
   async closeBrowser() {
     await this.page.close();
